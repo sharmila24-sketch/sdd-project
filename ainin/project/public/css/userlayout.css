@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* Role-based colors */
+.public .sidebar,
+.public .header {
+    background-color: #007BFF; /* Blue */
+}
+
+.mcmc .sidebar,
+.mcmc .header {
+    background-color: #dc3545; /* Red */
+}
+
+.agency .sidebar,
+.agency .header {
+    background-color: #fd7e14; /* Orange */
+}
